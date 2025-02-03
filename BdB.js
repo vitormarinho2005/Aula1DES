@@ -1,15 +1,10 @@
-function somaNumeros(n) {
-    let soma = 0;
-    for (let i = 1; i <= n; i++) {
-        soma += i;
+// Função que exibe a tabuada de um número
+function exibirTabuada(numero) {
+    // Laço for para multiplicar o número pelos valores de 1 a 10
+    for (let i = 1; i <= 10; i++) {
+        console.log(`${numero} x ${i} = ${numero * i}`);
     }
-    return soma;
 }
 
-// Exemplo de uso
-const numero = parseInt(prompt("Digite um número: "));
-if (!isNaN(numero) && numero > 0) {
-    console.log(`A soma de 1 até ${numero} é: ${somaNumeros(numero)}`);
-} else {
-    console.log("Por favor, digite um número inteiro positivo.");
-}
+// Chamada da função para exibir a tabuada de um número, por exemplo, 7
+exibirTabuada(10);
